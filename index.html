@@ -5,8 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Barbería Filo Fino | Santiago de los Caballeros</title>
 <meta name="description" content="Reserva por WhatsApp, llega a tu hora y sal listo. Cortes clásicos, fades y arreglo de barba con navaja.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://daltonarc.github.io/stackrd-demo-barberia/">
+<meta property="og:title" content="Barbería Filo Fino | Santiago de los Caballeros">
+<meta property="og:description" content="Reserva por WhatsApp, llega a tu hora y sal listo. Cortes clásicos, fades y arreglo de barba con navaja.">
+<meta property="og:url" content="https://daltonarc.github.io/stackrd-demo-barberia/">
+<meta property="og:image" content="https://daltonarc.github.io/stackrd-demo-barberia/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Barbería Filo Fino, demo de sitio web">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_DO">
+<meta property="og:site_name" content="Barbería Filo Fino">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1c1c1c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="demo.css">
 <style>
 :root{
   --primario: #1c1c1c;
@@ -104,14 +120,17 @@ footer a{color:#fff;font-weight:600}
   .flotante{width:52px;height:52px;right:14px;bottom:14px}
   .flotante svg{width:26px;height:26px}
 }
+:root{--d-acc:#c8963e;--d-acc-tx:#1c1c1c;--d-ink:#1c1c1c;--d-bg:#f6f3ee;--d-card:#fff;--d-line:#8f8574;--d-title:var(--titulo);--d-body:Inter,system-ui,sans-serif}
+.btn{color:#1c1c1c}.precio{color:#7a520a}.info small{opacity:.85}.intro{opacity:.85}.card p{opacity:.85}.fcita h2,.gal h2{font-family:var(--titulo)}
 </style>
 </head>
 <body>
-<div class="demo">Página de demostración hecha por StackRD. <a href="https://wa.me/18293390257?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
+<a class="skip" href="#servicios">Saltar al contenido</a>
+<div class="demo">Página de demostración de un negocio ficticio. <a data-wa="Hola, quiero una página web para mi negocio." href="#" target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
 <nav><div class="wrap">
   <a class="logo" href="#"><span>💈</span>Barbería Filo Fino</a>
   <ul><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
-  <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Barber%C3%ADa%20Filo%20Fino%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+  <a class="btn" href="#cita">Reservar por WhatsApp</a>
 </div></nav>
 
 <header class="hero"><div class="wrap">
@@ -120,7 +139,7 @@ footer a{color:#fff;font-weight:600}
     <h1>Tu mejor corte, sin esperar turno</h1>
     <p>Reserva por WhatsApp, llega a tu hora y sal listo. Cortes clásicos, fades y arreglo de barba con navaja.</p>
     <div class="acciones">
-      <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Barber%C3%ADa%20Filo%20Fino%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+      <a class="btn" href="#cita">Reservar por WhatsApp</a>
       <a class="btn sec" href="#servicios">Ver servicios</a>
     </div>
     <div class="datos"><div><b>Lun–Sáb</b>Abierto</div><div><b>30 min</b>por servicio</div><div><b>Cita</b>por WhatsApp</div></div>
@@ -134,6 +153,18 @@ footer a{color:#fff;font-weight:600}
   <div class="grid"><div class="card"><div class="ico">✂️</div><h3>Corte clásico</h3><p>Corte a tijera o máquina, lavado y peinado.</p><div class="precio">RD$400</div></div><div class="card"><div class="ico">💈</div><h3>Fade / Degradado</h3><p>Degradado bajo, medio o alto con acabado a navaja.</p><div class="precio">RD$500</div></div><div class="card"><div class="ico">🧔</div><h3>Arreglo de barba</h3><p>Perfilado, toalla caliente y aceite.</p><div class="precio">RD$300</div></div><div class="card"><div class="ico">⭐</div><h3>Combo completo</h3><p>Corte + barba + cejas.</p><div class="precio">RD$750</div></div></div>
 </div></section>
 
+<section class="gal"><div class="wrap"><h2>Un vistazo al local</h2><ul><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de un sillón de barbero frente a un espejo" focusable="false"><rect width="300" height="220" fill="#2b2620"/><rect x="70" y="30" width="160" height="110" rx="8" fill="#f6f3ee"/><rect x="78" y="38" width="144" height="94" rx="4" fill="#9fb6c4"/><rect x="110" y="120" width="80" height="50" rx="12" fill="#c8963e"/><rect x="100" y="100" width="100" height="30" rx="12" fill="#a1772a"/><rect x="140" y="170" width="20" height="22" fill="#888"/><rect x="110" y="190" width="80" height="10" rx="5" fill="#555"/></svg><figcaption>El sillón</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de una tijera y un peine" focusable="false"><rect width="300" height="220" fill="#f6f3ee"/><rect x="60" y="150" width="180" height="22" rx="4" fill="#1c1c1c"/><g fill="#f6f3ee"><rect x="68" y="154" width="6" height="14"/><rect x="82" y="154" width="6" height="14"/><rect x="96" y="154" width="6" height="14"/><rect x="110" y="154" width="6" height="14"/><rect x="124" y="154" width="6" height="14"/><rect x="138" y="154" width="6" height="14"/><rect x="152" y="154" width="6" height="14"/><rect x="166" y="154" width="6" height="14"/></g><path d="M120 30l50 90M180 30l-50 90" stroke="#555" stroke-width="8" stroke-linecap="round"/><circle cx="112" cy="132" r="16" fill="none" stroke="#c8963e" stroke-width="7"/><circle cx="188" cy="132" r="16" fill="none" stroke="#c8963e" stroke-width="7"/></svg><figcaption>Tijera y peine</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de una navaja y brocha de afeitar" focusable="false"><rect width="300" height="220" fill="#e4ddd2"/><rect x="50" y="110" width="150" height="26" rx="6" fill="#1c1c1c" transform="rotate(-18 125 123)"/><path d="M60 128l120-40" stroke="#d9d9d9" stroke-width="10" stroke-linecap="round"/><rect x="210" y="70" width="30" height="80" rx="8" fill="#c8963e"/><ellipse cx="225" cy="62" rx="24" ry="22" fill="#fff"/><rect x="40" y="170" width="220" height="10" rx="5" fill="#b9ae9d"/></svg><figcaption>Barba con navaja</figcaption></figure></li><li><figure><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de un poste de barbería con rayas" focusable="false"><rect width="300" height="220" fill="#141414"/><rect x="125" y="40" width="50" height="130" rx="20" fill="#fff"/><g stroke="#c0392b" stroke-width="12"><path d="M125 70l50-18M125 100l50-18M125 130l50-18M125 160l50-18"/></g><g stroke="#2e5fa8" stroke-width="6"><path d="M125 82l50-18M125 112l50-18M125 142l50-18"/></g><rect x="115" y="28" width="70" height="16" rx="6" fill="#c8963e"/><rect x="115" y="166" width="70" height="16" rx="6" fill="#c8963e"/></svg><figcaption>El poste</figcaption></figure></li></ul></div></section>
+<section class="fcita" id="cita"><div class="wrap">
+<h2>Reserva tu cita</h2>
+<p class="sub">Elige el servicio, el día y la hora. Te abrimos WhatsApp con el mensaje listo.</p>
+<form id="fcita" novalidate>
+<div><label for="f-nombre">Tu nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+<div><label for="f-serv">Servicio</label><select id="f-serv" name="servicio" required><option value="">Elige uno</option><option value="Corte clásico">Corte clásico (RD$400)</option><option value="Fade / Degradado">Fade / Degradado (RD$500)</option><option value="Arreglo de barba">Arreglo de barba (RD$300)</option><option value="Combo completo">Combo completo (RD$750)</option></select></div>
+<div><label for="f-fecha">Fecha</label><input id="f-fecha" name="fecha" type="date" required></div>
+<div><label for="f-hora">Hora</label><select id="f-hora" name="hora" required><option value="">Elige la hora</option><option value="9:00 a.m.">9:00 a.m.</option><option value="9:30 a.m.">9:30 a.m.</option><option value="10:00 a.m.">10:00 a.m.</option><option value="10:30 a.m.">10:30 a.m.</option><option value="11:00 a.m.">11:00 a.m.</option><option value="11:30 a.m.">11:30 a.m.</option><option value="12:00 p.m.">12:00 p.m.</option><option value="12:30 p.m.">12:30 p.m.</option><option value="1:00 p.m.">1:00 p.m.</option><option value="1:30 p.m.">1:30 p.m.</option><option value="2:00 p.m.">2:00 p.m.</option><option value="2:30 p.m.">2:30 p.m.</option><option value="3:00 p.m.">3:00 p.m.</option><option value="3:30 p.m.">3:30 p.m.</option><option value="4:00 p.m.">4:00 p.m.</option><option value="4:30 p.m.">4:30 p.m.</option><option value="5:00 p.m.">5:00 p.m.</option><option value="5:30 p.m.">5:30 p.m.</option><option value="6:00 p.m.">6:00 p.m.</option><option value="6:30 p.m.">6:30 p.m.</option><option value="7:00 p.m.">7:00 p.m.</option><option value="7:30 p.m.">7:30 p.m.</option></select></div>
+<button type="submit">Reservar por WhatsApp</button>
+<p class="nota">Se abre WhatsApp con tu mensaje listo. Esta es una demostración de un negocio ficticio.</p>
+</form></div></section>
 <section id="nosotros" class="nosotros"><div class="wrap">
   <div>
     <h2>Atención de primera en el corazón del Cibao</h2>
@@ -145,16 +176,20 @@ footer a{color:#fff;font-weight:600}
 <section id="contacto" class="contacto"><div class="wrap">
   <div class="info">
     <h2>Visítanos</h2>
-    <div><small>Dirección</small><b>Calle del Sol, Santiago de los Caballeros</b></div>
+    <div><small>Dirección</small><b>Av. Juan Pablo Duarte, Santiago de los Caballeros</b></div>
     <div><small>Horario</small><b>Lunes a sábado, 9:00 a.m. – 8:00 p.m.</b></div>
     <div><small>WhatsApp</small><b>(829) 000-0000</b></div>
-    <a class="btn" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Barber%C3%ADa%20Filo%20Fino%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    <a class="btn" href="#cita">Reservar por WhatsApp</a>
   </div>
-  <iframe loading="lazy" src="https://www.google.com/maps?q=Calle%20del%20Sol%2C%20Santiago%20de%20los%20Caballeros%2C%20Rep%C3%BAblica%20Dominicana&output=embed" title="Mapa"></iframe>
+  <iframe loading="lazy" src="https://www.google.com/maps?q=Av.%20Juan%20Pablo%20Duarte%2C%20Santiago%20de%20los%20Caballeros&amp;output=embed" title="Mapa de Santiago de los Caballeros" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div></section>
 
-<footer>© Barbería Filo Fino · Santiago de los Caballeros &nbsp;|&nbsp; Página hecha por <a href="https://wa.me/18293390257?text=Hola%2C%20vi%20una%20p%C3%A1gina%20hecha%20por%20StackRD%20y%20quiero%20una." target="_blank" rel="noopener">StackRD</a></footer>
+<footer>© Barbería Filo Fino · Santiago de los Caballeros · Negocio ficticio</footer>
 
-<a class="flotante" href="https://wa.me/18293390257?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20demostraci%C3%B3n%20de%20Barber%C3%ADa%20Filo%20Fino%20y%20quiero%20una%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<div class="credito">Demo creada por <a href="https://daltonarc.github.io/stackrd-web/" target="_blank" rel="noopener">StackRD</a></div>
+<a class="wa-float" data-wa="Hola, quiero información." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<script src="config.js"></script>
+<script src="demo.js"></script>
+<script>formWa(document.getElementById('fcita'),function(d){var p=d.fecha.split('-');var f=p[2]+'/'+p[1]+'/'+p[0];return 'Hola, quiero reservar una cita: '+d.servicio+', el '+f+' a las '+d.hora+' A nombre de '+d.nombre+'.';});</script>
 </body>
 </html>
